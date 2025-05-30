@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "990b5284-c6a3-4199-9939-52155fcb39d1",
+		"name": "EndPointsLogin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45464482",
+		"_collection_link": "https://brendacortes-2028746.postman.co/workspace/Brenda-Cortes's-Workspace~6b46a0f9-9baf-4930-8d89-86d859c42580/collection/45464482-990b5284-c6a3-4199-9939-52155fcb39d1?action=share&source=collection_link&creator=45464482"
+	},
+	"item": [
+		{
+			"name": "ConsultarLoginLogOut",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/EndPoinds",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"EndPoinds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NuevoLoginLogOut",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 1,\r\n    \"extension\": 456,\r\n    \"tipoMov\": 1,\r\n    \"fecha\": \"2025-05-30T10:00:00\",\r\n    \"user\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/EndPoinds",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"EndPoinds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"user_id\": 3 ,\r\n    \"extension\": 1001,\r\n    \"tipoMov\": 1,\r\n    \"fecha\": \"2025-05-31T10:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/EndPoinds/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"EndPoinds",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteLoginLogOut",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/EndPoinds/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"EndPoinds",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CSV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/EndPoinds/export-csv",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"EndPoinds",
+						"export-csv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
