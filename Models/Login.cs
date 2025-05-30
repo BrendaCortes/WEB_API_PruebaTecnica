@@ -6,7 +6,10 @@ namespace WEB_API.Models
     [Table("ccloglogin")]
     public class Login
     {
+
         [Key]
+        public int id { get; set; }
+
         public int User_id { get; set; }
 
         [Required]
@@ -17,6 +20,9 @@ namespace WEB_API.Models
 
         [Required]
         public DateTime fecha { get; set; }
+
+        
+        public User? User { get; set; }
 
     }
 }
